@@ -1,0 +1,18 @@
+<h2>Date Changer</h2>
+
+<h3>Right Now</h3>
+<p>{{now}}</p>
+
+<h3>Right Now (date pipe)</h3>
+<p>{{now | date}}</p>
+
+<h3>Right Now (date pre-made format)</h3>
+<p>{{now | date:"fullDate"}}</p>
+
+<h3>Right Now (date custom format)</h3>
+<p>{{now | date:"EEEE, MMMM d, y h:mm aa"}}</p>
+
+<button (click)="addHours(1)">+1 hour</button>
+<button (click)="addDays(1)">+1 day</button>
+<button (click)="addWeeks(1)">+1 week</button>
+<button (click)="resetDate()">Reset</button>

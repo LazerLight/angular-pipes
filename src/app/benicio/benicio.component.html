@@ -1,0 +1,13 @@
+<h2>The Many Faces of Puerto Rican Actor Benicio del Toro</h2>
+
+<label>
+  Search For Your Benicio
+  <input [(ngModel)]="userInput" type="search" placeholder="sensual" />
+</label>
+
+<ul>
+  <li *ngFor="let oneBen of (benicios | actorFilter:userInput)">
+    <h3>{{oneBen.actorName}}</h3>
+    <img [src]="oneBen.actorImage" />
+  </li>
+</ul>
